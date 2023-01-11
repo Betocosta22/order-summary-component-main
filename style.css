@@ -1,0 +1,43 @@
+@import url(https://fonts.google.com/specimen/Red+Hat+Display);
+
+:root {
+    /* ---- Primary ---- */
+
+    --paleblue: hsl(225, 100%, 94%);
+    --brightblue: hsl(245, 75%, 52%);
+
+    /* ---- Neutral ---- */
+
+    --verypaleblue: hsl(225, 100%, 98%);
+    --desaturatedblue: hsl(224, 23%, 55%);
+    --darkblue: hsl(223, 47%, 23%);
+}
+body {
+    width: 1440px;
+    display: grid;
+    text-align: center;
+    background-color: var(--paleblue);
+    font-size: 16px;
+    background-image: url(file:///C:/Users/betoc/OneDrive/%C3%81rea%20de%20Trabalho/projetos/order-summary-component-main/order-summary-component-main/images/pattern-background-desktop.svg);
+    
+
+}
+.card {
+    margin-left: 495px;
+    background-color: var(--verypaleblue);
+    border-radius: 15px;
+    width: 450px;
+    height: 700px;
+    text-align: center;
+    font-family: 'Red Hat Display';
+    box-shadow: 3px 10px 20px var(--desaturatedblue);
+}
+.card img {
+    border-radius: 15px 15px 0 0;
+}
+.plan {
+    width: 360px;
+    height: 100px;
+    text-align: center;
+
+}
