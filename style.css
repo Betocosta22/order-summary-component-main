@@ -18,7 +18,7 @@ body {
     display: grid;
     text-align: center;
     background-color: var(--paleblue);
-    font-size: 20px;
+    font-size: 15px;
     
     
 }
@@ -64,6 +64,8 @@ body {
     background-color: var(--verypaleblue);
     width: 360px;
     height: 100px;
+    transition-property: background-color;
+    transition-duration: 0.8s;
     
 }
 .plan img{
@@ -78,6 +80,9 @@ body {
 }
 .plan a {
     margin-top: 35px;
+}
+.plan:hover{
+    background-color: hsl(225, 9%, 83%);
 }
 .buttons {
     text-align: left;
@@ -98,8 +103,20 @@ button {
     font-family: "Red Hat Display", sans-serif;
     font-weight: bold;
     box-shadow: 0 10px 30px var(--desaturatedblue);
-    
-
+    cursor: pointer;  
+    transition-property: background-color, transform, color;
+    transition-duration: 0.4s, 0.4s, 0.4s;
+}
+button:hover {
+    background-color: rgb(114, 228, 194);
+    transform: scale(1.03, 1.03);
+    color: hsl(223, 47%, 23%);
+}
+button:active {
+    transition: 0.01ms;
+    background-color: var(--brightblue);
+    color: white;
+    transform: scale(1.01, 1.01);
 }
 .buttons a {
     margin: 60px 100px;
